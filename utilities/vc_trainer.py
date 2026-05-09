@@ -387,6 +387,15 @@ def _export_model(applio_model_path: Path, applio_index_path: Path, model_name: 
     shutil.copy2(applio_index_path, index_path)
     print(f"Exported RVC model: {model_path}", flush=True)
     print(f"Exported RVC index: {index_path}", flush=True)
+
+    # Write export metadata into the model checkpoint.
+    try:
+        from utilities.signal_processor import finalize_export
+        finalize_export(model_path)
+        print(f"Export metadata written: {model_path}", flush=True)
+    except Exception as exc:
+        print(f"WARNING: failed to write export metadata: {exc}", flush=True)
+
     return model_path, index_path
 
 

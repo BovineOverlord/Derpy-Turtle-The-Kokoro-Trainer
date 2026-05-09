@@ -17,6 +17,7 @@ from utilities.initial_selector import InitialSelector
 from utilities.path_router import OUT_DIR
 from utilities.speech_generator import SpeechGenerator
 from utilities.voice_generator import VoiceGenerator
+from utilities.signal_processor import normalize_output
 
 
 class KVoiceWalk:
@@ -218,7 +219,7 @@ class KVoiceWalk:
         )
         sf.write(
             f'{results_dir}/{self.output_name}_{step}_{results["score"]:.2f}_{results["target_similarity"]:.2f}_{self.target_audio.stem}.wav',
-            results["audio"],
+            normalize_output(results["audio"], 24000),
             24000,
         )
 
