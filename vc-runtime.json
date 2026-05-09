@@ -1,0 +1,8 @@
+﻿{
+  "backend": "rvc",
+  "vc_python": "D:\\AI\\derpy-turtle-kokoro-trainer\\.venv_vc_rvc\\Scripts\\python.exe",
+  "rvc_model": "D:\\AI\\derpy-turtle-kokoro-trainer\\vc_models\\rvc\\default_abe_shinzo\\AbeShinzo2.pth",
+  "rvc_index": "D:\\AI\\derpy-turtle-kokoro-trainer\\vc_models\\rvc\\default_abe_shinzo\\added_IVF429_Flat_nprobe_6.index",
+  "command_rvc": "\u0022D:\\AI\\derpy-turtle-kokoro-trainer\\.venv_vc_rvc\\Scripts\\python.exe\u0022 -m rvc_python cli --input \u0022{input_wav}\u0022 --output \u0022{output_wav}\u0022 --model \u0022D:\\AI\\derpy-turtle-kokoro-trainer\\vc_models\\rvc\\default_abe_shinzo\\AbeShinzo2.pth\u0022 --index \u0022D:\\AI\\derpy-turtle-kokoro-trainer\\vc_models\\rvc\\default_abe_shinzo\\added_IVF429_Flat_nprobe_6.index\u0022 --device cuda:0 --method rmvpe --version v2",
+  "updated_utc": "2026-05-08T14:05:55.0757749Z"
+}

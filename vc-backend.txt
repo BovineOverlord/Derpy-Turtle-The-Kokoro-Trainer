@@ -1,0 +1,3 @@
+# Derpy Turtle VC backend selection for launcher auto-install.
+# Supported values: rvc, sovits, none
+rvc
