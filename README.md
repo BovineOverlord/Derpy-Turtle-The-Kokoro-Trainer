@@ -50,6 +50,25 @@ Setup logs are written to:
 derpy-turtle-launcher.log
 ```
 
+## Simplified Instructions
+0. Note that you do not always need to let Random Walk run all its steps if its made enough progress- check the out .wav files to confirm progress.
+1. Load Target Audio (Recommended at least 30 sec long)
+2. Write Target Audio's text under "Target Text"
+3. Select a Preset "Balanced" or "Fast Iterate"
+4. Click "Add Task"
+5. Click "Start Queue"
+6. When finished, load "Starting Voice" (the most recent .pt in /out)
+7. Change mode to "Train Target RVC Model" (in top left)
+8. Change VC Preset to RVC
+9. Click "Add Task"
+10. Click "Start Queue"
+11. When finished, change mode back to random walk
+12. Change preset to "Accent Focus" or "Similarity Recovery"
+13. Click "Use Latest RVC"
+14. Click "Add Task"
+15. Click "Start Queue"
+16. The final .pt should be very close to your target voice. If not, you'll need to play around, but this should cover most cases.
+
 ## Requirements
 
 - Windows 10/11.
