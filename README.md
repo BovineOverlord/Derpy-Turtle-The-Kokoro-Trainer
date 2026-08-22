@@ -38,11 +38,8 @@ The optimizer score is measured before RVC conversion. If the `_rvc.wav` sounds 
 
 Run:
 
-```powershell
-.\derpy-turtle-kokoro-trainer.exe
-```
-
-On first launch, the executable creates `.venv`, installs the Python dependencies, prepares the selected voice-conversion backend, and opens the GUI.
+"build-launcher.cmd" to initate first-time setup
+After it closes, just the .exe in the future
 
 Setup logs are written to:
 
