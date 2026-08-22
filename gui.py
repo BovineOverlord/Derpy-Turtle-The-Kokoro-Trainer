@@ -265,7 +265,15 @@ class KVoiceWalkGui:
     def __init__(self, root: tk.Tk):
         self.root = root
         self.root.title("Derpy Turtle: The Kokoro Trainer")
-        self.root.geometry("1320x920")
+        self.root.geometry("1320x920")          # restored-down size
+        self.root.minsize(1100, 720)
+        try:
+            self.root.state("zoomed")           # open maximised on Windows
+        except tk.TclError:
+            try:
+                self.root.attributes("-zoomed", True)  # fallback for some X11/Linux WMs
+            except tk.TclError:
+                pass
         self.root.configure(bg=CLR_BG)
         self.root.option_add("*Font", "TkDefaultFont")
 
